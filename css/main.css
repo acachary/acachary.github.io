@@ -1,0 +1,22 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:bold,bolditalic,italic);
+
+body
+{
+	background-color: #111111;
+}
+h1
+{
+	font-family: 'Lato';
+	font-size: 60px;
+	color: #b59663;
+	letter-spacing:4px;
+	word-spacing: 10px;
+}
+
+.centered
+{
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

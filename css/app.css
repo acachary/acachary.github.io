@@ -21,14 +21,22 @@
 
 .fade-in.one 
 {
-	-webkit-animation-delay: 0.4s;
-	-moz-animation-delay: 0.4s;
-	animation-delay: 0.4s;
+	-webkit-animation-delay: 0.5s;
+	-moz-animation-delay: 0.5s;
+	animation-delay: 0.5s;
+}
+
+.fade-in.two 
+{
+	-webkit-animation-delay: 1.0s;
+	-moz-animation-delay: 1.0s;
+	animation-delay: 1.0s;
 }
 
 body
 {
 	background-color: #111111;
+	height: 85%;
 }
 h1
 {
@@ -39,6 +47,20 @@ h1
 	word-spacing: 10px;
 }
 
+.size-12 { font-size: 12px; }      
+.size-14 { font-size: 14px; }      
+.size-16 { font-size: 16px; }      
+.size-18 { font-size: 18px; }      
+.size-21 { font-size: 21px; }      
+.size-24 { font-size: 24px; }      
+.size-36 { font-size: 36px; }      
+.size-48 { font-size: 48px; }
+.size-54 { font-size: 54px; }     
+.size-60 { font-size: 60px; }      
+.size-72 { font-size: 72px; }      
+.usage { margin-top: 10px; }
+
+/*
 .home-wrapper
 {
 	display: block;
@@ -62,8 +84,35 @@ h1
 	width: 100%;
 	transform: translate(-50%, -50%);
 }
-
+*/
 .header-mid
 {
 	margin-top: 25%;
+}
+
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto -4em;
+}
+.footer, .push {
+	height: 4em;
+	clear: both;
+}
+
+.social-icon
+{
+	margin: 20px;
+	display: inline-block;
+}
+
+.icon-style
+{
+	color: #173F5E;
+}
+
+i:hover
+{
+	color: #008CBA;
 }

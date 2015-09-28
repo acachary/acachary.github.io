@@ -1,4 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:bold,bolditalic,italic);
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -35,10 +36,10 @@
 
 body
 {
-	background-color: #111111;
+	background-color: #FFF;
 	height: 85%;
 }
-h1
+h1.title
 {
 	font-family: 'Lato';
 	font-size: 60px;
@@ -85,6 +86,24 @@ h1
 	transform: translate(-50%, -50%);
 }
 */
+
+.container-fluid
+{
+	margin-right: auto;
+	margin-left: auto;
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+
+
+.navigationbar img
+{
+	max-width: 100%;
+	height: auto;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
 .header-mid
 {
 	margin-top: 25%;
@@ -93,7 +112,6 @@ h1
 .wrapper {
 	min-height: 100%;
 	height: auto !important;
-	height: 100%;
 	margin: 0 auto -4em;
 }
 .footer, .push {
@@ -116,3 +134,90 @@ i:hover
 {
 	color: #008CBA;
 }
+
+.logo_text
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: auto;
+	z-index: 10;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 17px;
+	color: black;
+	margin:30px 0px 20px 15px;
+}
+
+.logo_box
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: auto;
+	z-index: 4;
+	margin: 20px 0px 20px 29px;
+}
+
+.logo_frame
+{
+	fill:blue;
+	stroke:black;
+	stroke-width:1;
+	fill-opacity:0;
+	stroke-opacity:1.0;
+}
+.logo_strip
+{
+	fill:white;
+	fill-opacity:1;
+	z-index: 6;
+}
+
+h1.intro_title
+{
+	font-family: Lato;
+	font-size: 32px;
+	color: #5d5d5d;
+	letter-spacing:2px;
+	word-spacing: 5px;
+}
+h2.intro_subtitle
+{
+	font-family: Lato;
+	font-size: 24px;
+	color: #5d5d5d;
+	letter-spacing:1.5px;
+	word-spacing: 2px;
+}
+
+@media only screen and (max-width: 80em) { 
+
+	.column, .columns {
+	    padding-left: 2rem;
+	    padding-right: 2rem;
+	}
+	h1.intro_title
+	{
+	  	margin-top: 10rem;
+	  	font-size: 1.3em;
+	  	letter-spacing:0.05em;
+		word-spacing: 0.05em;
+	}
+	h2.intro_subtitle
+	{
+	  	font-size: 1em;
+	  	letter-spacing:0.05em;
+		word-spacing: 0.05em;
+		line-height: 1.5em;
+	}
+}
+
+@media only screen and (orientation: landscape) {
+	.column, .columns {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+

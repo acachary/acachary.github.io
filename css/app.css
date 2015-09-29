@@ -206,9 +206,9 @@ h1.work_title
 
 
 
-#section1
+#section0
 {
-	background-image: url("../img/ananya_2.png");
+	background-image: url("../img/ananya_3.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -238,7 +238,7 @@ h1.work_title
 		word-spacing: 0.05em;
 		line-height: 1.5em;
 	}
-	#section1
+	#section0
 	{
 		background-position: left bottom;
 	}

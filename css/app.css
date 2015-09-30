@@ -156,7 +156,7 @@ i:hover
 	left: 0;
 	width: auto;
 	height: auto;
-	z-index: 9;
+	z-index: 10;
 	margin: 20px 0px 20px 29px;
 }
 
@@ -201,21 +201,27 @@ h1.work_title
 	color: #5d5d5d;
 	letter-spacing:2px;
 	word-spacing: 5px;
-	margin-top: 75px;
+	/*margin-top: 75px;*/
 }
-
-
-
 #section0
 {
-	background-image: url("../img/ananya_2.png");
+	background-image: url("../img/intro_bg.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
     z-index: -1;
 }
 
-#section2 .fp-tableCell{
+#section2
+{
+	background-image: url("../img/ananya_1.png");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: cover;
+    z-index: -1;
+}
+
+#section1 .fp-tableCell{
      vertical-align: top;
 }
 
@@ -240,13 +246,19 @@ h1.work_title
 	}
 	#section0
 	{
+		background-position: bottom;
+		background-size: contain;
+	}
+	#section2
+	{
 		background-position: left bottom;
 	}
 }
 
+
 @media only screen and (min-width: 1400px) and (orientation: landscape)
 {
-	h1.work_title
+	#section1 h1.work_title
 	{
 		margin-top: 20px;
 	}

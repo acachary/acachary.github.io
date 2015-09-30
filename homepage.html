@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Ananya Acharya</title>
+	<meta name="author" content="Ananya Acharya" />
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/foundation.css">
+	<link rel="stylesheet" href="css/foundation-icons.css">
+	<link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
+	<link rel="stylesheet" href="css/app.css">
+
+
+</head>
+<body>
+	<div id="fullpage">
+		<div class="section active" id="section0"><h1>fullPage.js</h1></div>
+		<div class="section" id="section1">
+		    <div class="slide "><h1>Simple Demo</h1></div>
+		    <div class="slide active"><h1>Only text</h1></div>
+		    <div class="slide"><h1>And text</h1></div>
+		    <div class="slide"><h1>And more text</h1></div>
+		</div>
+		<div class="section" id="section2"><h1>No wraps, no extra markup</h1></div>
+		<div class="section" id="section3"><h1>Just the simplest demo ever</h1></div>
+	</div>
+
+	<script src="js/vendor/modernizr.js"></script>
+	<script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+      $(document).foundation();
+    </script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#fullpage').fullpage({
+				sectionsColor: ['#f2f2f2', '#4BBFC3', '#7BAABE', 'whitesmoke', '#ccddff']
+			});
+		});
+	</script>
+</body>
+</html>

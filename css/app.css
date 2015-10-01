@@ -88,6 +88,7 @@ h1.title
 }
 */
 
+
 .container-fluid
 {
 	margin-right: auto;
@@ -175,6 +176,36 @@ i:hover
 	fill-opacity:1;
 	z-index: 10;
 }
+	/* Fixed header and footer.
+	* --------------------------------------- */
+	#header, #footer{
+		position:fixed;
+		height: 70px;
+		display:block;
+		width: 100%;
+		z-index:9;
+		text-align:center;
+		padding: 20px 0 0 0;
+	}
+
+	#header{
+		top:0px;
+	}
+	#footer{
+		bottom:0px;
+	}
+
+
+	/* Bottom menu
+	* --------------------------------------- */
+	#infoMenu {
+		bottom: 80px;
+	}
+	#infoMenu li a {
+		color: #fff;
+		z-index: 999;
+	}
+
 
 h1.intro_title
 {
@@ -226,6 +257,13 @@ h1.work_title
 #section1 .fp-tableCell{
      vertical-align: top;
 }
+
+.yellow-under
+{
+	border-bottom: 2px solid yellow;
+}
+
+/* Media Queries */
 
 @media only screen and (max-width: 60em){ 
 

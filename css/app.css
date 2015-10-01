@@ -1,5 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:bold,bolditalic,italic);
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
 @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
 @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
@@ -177,8 +178,9 @@ i:hover
 
 h1.intro_title
 {
-	font-family: Lato;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 32px;
+	font-weight: 600;
 	color: #242121;
 	text-shadow: 0 1px 0 #CFCFCF;
 	letter-spacing:2px;
@@ -186,7 +188,7 @@ h1.intro_title
 }
 h2.intro_subtitle
 {
-	font-family: Lato;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 24px;
 	color: #484848;
 	text-shadow: 0 1px 0 #CFCFCF;
@@ -196,7 +198,7 @@ h2.intro_subtitle
 
 h1.work_title
 {
-	font-family: Lato;
+	font-family: 'Open Sans', sans-serif;
 	font-size: 32px;
 	color: #5d5d5d;
 	letter-spacing:2px;

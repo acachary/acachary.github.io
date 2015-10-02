@@ -247,7 +247,7 @@ h1.work_title
 
 #section2
 {
-	background-image: url("../img/ananya_1.png");
+	background-image: url("../img/ananya_2.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: cover;
@@ -306,98 +306,128 @@ h1.work_title
 
 
 /* Mouse Scroll Icon */
-#scrolldown {
-  margin-left: -50px;
-  position: absolute;
-  left: 50%;
-  text-align: center;
-}
-#scrolldown p {
-  font: 700 0.7em/1em 'Avenir',sans-serif;
-  animation-duration: 2s;
-  animation-fill-mode: both;
-  animation-iteration-count: infinite;
-  animation-name: scroll;
-  color: #000;
-}
-#scrolldown > p {
-  text-transform: uppercase;
-  text-indent: 3px;
-}
 .mouse {
-  border: 1px solid #1D1D1D;
-  border-radius: 14px;
-  display: block;
-  height: 40px;
-  left: 50%;
-  margin: 10px 0 0 -13px;
   position: absolute;
-  width: 26px;
+  z-index:10;
+  width: 22px;
+  height: 42px;
+  bottom: 40px;
+  left: 50%;
+  margin-left: -12px;
+  border-radius: 15px;
+  border: 2px solid #888;
+  -webkit-animation: intro 3s;
+  animation: intro 3s;
 }
-.mouse span {
+.scroll {
   display: block;
-  font-size: 1.5em;
+    z-index:10;
+  width: 3.5px;
+  height: 3.5px;
   margin: 6px auto;
+  border-radius: 4px;
+  background: #888;
+  -webkit-animation: finger 1.5s infinite;
+  animation: finger 1.5s infinite;
 }
-@keyframes scroll {
+@-webkit-keyframes intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes intro {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes finger {
   0% {
     opacity: 1;
-    transform: translateY(0px);
   }
   100% {
     opacity: 0;
-    transform: translateY(10px);
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
+  }
+}
+@keyframes finger {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(20px);
+    transform: translateY(20px);
   }
 }
 /* End Mouse Scroll */
-.icon-scroll,
-.icon-scroll:before {
+
+/* Arrow scroll 
+
+.scroll {
   position: absolute;
   left: 50%;
+  bottom: 0;
+  height: 0;
+  width: 0;
+  border-left: 90px solid transparent;
+  border-right: 90px solid transparent;
+  border-bottom: 80px solid white;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
 }
-.icon-scroll {
-  width: 40px;
-  height: 70px;
-  margin-left: -20px;
-  top: 50%;
-  margin-top: -35px;
-  box-shadow: inset 0 0 0 1px #000;
-  border-radius: 25px;
-  vertical-align: bottom;
-}
-.icon-scroll:before {
+.scroll:before {
   content: '';
-  width: 8px;
-  height: 8px;
-  background: #000;
-  margin-left: -4px;
-  top: 8px;
-  border-radius: 4px;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
-  -webkit-animation-name: scroll;
-          animation-name: scroll;
+  position: absolute;
+  top: 45px;
+  left: 50%;
+  height: 20px;
+  width: 30px;
+  margin-top: -5px;
+  margin-left: -15px;
+  background: -webkit-linear-gradient(top left, #e84c00, #c10040);
+  background: linear-gradient(top left, #e84c00, #c10040);
+  background-image: url('../img/ananya_2.png');
+  -webkit-clip-path: polygon(15% 0, 50% 60%, 85% 0, 100% 20%, 50% 100%, 0 20%);
+          clip-path: polygon(15% 0, 50% 60%, 85% 0, 100% 20%, 50% 100%, 0 20%);
+  -webkit-animation: bounce 2s ease infinite;
+          animation: bounce 2s ease infinite;
 }
-@-webkit-keyframes scroll {
-  0% {
-    opacity: 1;
+
+@-webkit-keyframes bounce {
+  50% {
+    -webkit-transform: scale(0.75) translateY(-50%);
+            transform: scale(0.75) translateY(-50%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-@keyframes scroll {
-  0% {
-    opacity: 1;
+
+@keyframes bounce {
+  50% {
+    -webkit-transform: scale(0.75) translateY(-50%);
+            transform: scale(0.75) translateY(-50%);
   }
   100% {
-    opacity: 0;
-    -webkit-transform: translateY(46px);
-            transform: translateY(46px);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
   }
 }
-/* Arrow scroll */
+/* END Arrow scroll */

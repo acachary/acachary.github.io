@@ -367,9 +367,13 @@ i:hover {
     opacity: 1;
 }
 
-.menu-item.active path {
+.menu-item:active path {
     fill: #0ec19f;
 }
+.menu-item:hover path {
+    fill: #0ec19f;
+}
+
 
 .menu-item:nth-child(1):after,
 .menu-item:nth-child(2):after {

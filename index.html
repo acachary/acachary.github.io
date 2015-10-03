@@ -24,7 +24,8 @@
     <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-
+        	anchors: ['intro', 'about', 'contact'],
+			menu: '#navigator'
         });
     });
     </script>
@@ -89,7 +90,7 @@
         </div>
     </nav>
     <div id="fullpage">
-        <div class="section" id="section0">
+        <div class="section" id="section0" data-anchor="intro">
             <div class="row fade-in two">
                 <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
                     <h1 class="intro_title">Hi. I'm <span class="yellow-under">Ananya</span> - coder &amp; designer</h1>
@@ -100,7 +101,7 @@
                 <div class="scroll"></div>
             </div>
         </div>
-        <div class="section" id="section2">
+        <div class="section" id="section2" data-anchor="about">
             <div class="row">
                 <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
                     <h1 class="work_title">About</h1>
@@ -108,7 +109,7 @@
                 </div>
             </div>
         </div>
-        <div class="section" id="section3">
+        <div class="section" id="section3" data-anchor="contact">
             <div class="row">
                 <!--	<div class = "small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
 					<h1 class = "work_title">My Work</h1>

@@ -24,8 +24,9 @@
     <script type="text/javascript">
     $(document).ready(function() {
         $('#fullpage').fullpage({
-            anchors: ['intro', 'about', 'contact'],
-            menu: '#navigator'
+            anchors: ['intro', 'work', 'about', 'contact'],
+            menu: '#navigator',
+            loopHorizontal: false
         });
     });
     </script>
@@ -46,8 +47,8 @@
         </div>
     </div>
     <nav class="menu fade-in one" id="navigator">
-        <!--<div data-menuanchor="intro" class="active">
-        <a href="#intro" class="work menu-item">
+        <div data-menuanchor="intro" class="active">
+        <a href="#work" class="work menu-item">
             <div class="menu-link"><span class="title">work</span>
                 <div class="icon">
                     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
@@ -59,7 +60,7 @@
                 </div>
             </div>
         </a>
-        </div>-->
+        </div>
         <div data-menuanchor="about">
             <a href="#about" class="about menu-item">
                 <div class="menu-link"><span class="title">about</span>
@@ -99,6 +100,36 @@
             </div>
             <div class="mouse">
                 <div class="scroll"></div>
+            </div>
+        </div>
+        <div class="section" id="section1" data-anchor="work">
+            <div class="slide">
+                <div class="row">
+                    <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
+                        <h1 class="work_title">Project 1</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="row">
+                    <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
+                        <h1 class="work_title">Project 2</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="row">
+                    <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
+                        <h1 class="work_title">Project 3</h1>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="row">
+                    <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
+                        <h1 class="work_title">Project 4</h1>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="section" id="section2" data-anchor="about">

@@ -40,6 +40,20 @@
         });*/
     });
     </script>
+<!--    <script type="text/javascript">
+        window.onload = function() {
+            var frames = document.getElementsByTagName("iframe");
+            for (var i = 0; i< frames.length; i++) {
+                var innerDoc = (frames.item(i).contentDocument) ? 
+                    frames.item(i).contentDocument : frames.item(i).contentWindow.document;
+                var iframeVideoTags = innerDoc.getElementsByTagName("video");
+                for (var j = 0; j < iframeVideoTags.length; j++) {
+                    iframeVideoTags.item(j).pause();
+                }
+            }
+        }
+    </script>
+-->
 </head>
 
 <body>
@@ -133,12 +147,14 @@
                 <div class="topspace"></div>
                 <div class="row">
                     <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
-                        <iframe width="420" height="315" src="https://www.youtube.com/embed/ao6v5QQsFFY" frameborder="0" allowfullscreen></iframe>
+                        <div class="vid_container">
+                            <iframe class="video" id="vid" src="https://www.youtube.com/embed/ao6v5QQsFFY" frameborder="0" allowfullscreen></iframe>
+                        </div>
                     </div>
                 </div>
                 <div class="row">
                     <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
-                        <h1 class="work_title">•  Information Retrieval &amp; Search Engines – Nasa Polar Dataset</h1>
+                        <h1 class="work_title">Information Retrieval &amp; Search Engines – Nasa Polar Dataset</h1>
                         <h2 class="work_title">Spring 2015</h2>
                         <p class="work_text">Crawled three polar and arctic data repositories using Apache Nutch and Tika. Built two URL filter plugins for Nutch to perform de-duplication at the time of crawling. Designed and implemented content-based and link-based ranking algorithms on the indexed data using Solr and Lucene. Constructed Polar data visualization using D3.js and Banana Analytics.</p>
                     </div>

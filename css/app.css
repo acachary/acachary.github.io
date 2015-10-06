@@ -275,19 +275,23 @@ i:hover {
     left: 150px;
     border-width: 10.5px 20px 10.5px 0px;
     border-color: transparent #727272 transparent transparent;
+    opacity:0.5;
 }
 .fp-controlArrow.fp-next
 {
     border-width: 10.5px 0px 10.5px 20px;
     border-color: transparent transparent transparent #727272;
+    opacity:0.5;
 }
 .fp-controlArrow.fp-prev:hover
 {
     border-color: transparent #0ec19f transparent transparent;
+    opacity:1;
 }
 .fp-controlArrow.fp-next:hover
 {
     border-color: transparent transparent transparent #0ec19f;
+    opacity: 1;
 }
 
 #fp-nav {

@@ -528,11 +528,11 @@ p.work_text{
     .fp-controlArrow.fp-prev
     {
         left: 15px;
-        border-width: 8.5px 17px 8.5px 0px;
+        border-width: 5.5px 12px 5.5px 0px;
     }
     .fp-controlArrow.fp-next
     {
-        border-width: 8.5px 0px 8.5px 17px;
+        border-width: 5.5px 0px 5.5px 12px;
     }
     h1.intro_title {
         font-size: 1.3em;

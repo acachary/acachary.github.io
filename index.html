@@ -28,6 +28,14 @@
             menu: '#navigator',
             loopHorizontal: false
         });
+        $(window).scroll(function() {
+            isOnView = isElementVisible("#section1");
+            if (isOnView) {
+                alert('The selected element is visible!');
+            } else { // If not visible
+                //alert('oops, the selected elment might be hidden or does not exist');
+            }
+        });
     });
     </script>
 </head>
@@ -48,18 +56,18 @@
     </div>
     <nav class="menu fade-in one" id="navigator">
         <div data-menuanchor="intro" class="active">
-        <a href="#work" class="work menu-item">
-            <div class="menu-link"><span class="title">work</span>
-                <div class="icon">
-                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
-                        <defs></defs>
-                        <g>
-                            <path fill="#5D5D5D" d="M17,3v14H3V3H17 M20,0H0v20h20V0L20,0z"></path>
-                        </g>
-                    </svg>
+            <a href="#work" class="work menu-item">
+                <div class="menu-link"><span class="title">work</span>
+                    <div class="icon">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                            <defs></defs>
+                            <g>
+                                <path fill="#5D5D5D" d="M17,3v14H3V3H17 M20,0H0v20h20V0L20,0z"></path>
+                            </g>
+                        </svg>
+                    </div>
                 </div>
-            </div>
-        </a>
+            </a>
         </div>
         <div data-menuanchor="about">
             <a href="#about" class="about menu-item">
@@ -104,13 +112,15 @@
         </div>
         <div class="section" id="section1" data-anchor="work">
             <div class="slide">
+                <div class="topspace"></div>
                 <div class="row">
-                    <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
-                        <h1 class="work_title">Project 1</h1>
+                    <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
+                        <img src="img/stock_search.png">
                     </div>
                 </div>
             </div>
             <div class="slide">
+                <div class="topspace"></div>
                 <div class="row">
                     <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
                         <h1 class="work_title">Project 2</h1>
@@ -118,6 +128,7 @@
                 </div>
             </div>
             <div class="slide">
+                <div class="topspace"></div>
                 <div class="row">
                     <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
                         <h1 class="work_title">Project 3</h1>
@@ -125,10 +136,14 @@
                 </div>
             </div>
             <div class="slide">
+                <div class="topspace"></div>
                 <div class="row">
                     <div class="small-12 small-centered medium-12 medium-centered large-12 large-centered columns">
                         <h1 class="work_title">Project 4</h1>
                     </div>
+                </div>
+                <div class="mouse">
+                    <div class="scroll"></div>
                 </div>
             </div>
         </div>

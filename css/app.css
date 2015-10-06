@@ -269,6 +269,27 @@ i:hover {
 
 /* Position Navigation */
 
+/* Slide Navigation*/
+.fp-controlArrow.fp-prev
+{
+    left: 150px;
+    border-width: 10.5px 20px 10.5px 0px;
+    border-color: transparent #727272 transparent transparent;
+}
+.fp-controlArrow.fp-next
+{
+    border-width: 10.5px 0px 10.5px 20px;
+    border-color: transparent transparent transparent #727272;
+}
+.fp-controlArrow.fp-prev:hover
+{
+    border-color: transparent #0ec19f transparent transparent;
+}
+.fp-controlArrow.fp-next:hover
+{
+    border-color: transparent transparent transparent #0ec19f;
+}
+
 #fp-nav {
     position: absolute;
     top: 0;
@@ -409,8 +430,8 @@ h1.intro_title {
     font-family: 'Open Sans', sans-serif;
     font-size: 32px;
     font-weight: 600;
-    color: #242121;
-    text-shadow: 0 1px 0 #CFCFCF;
+    color: #201010;
+    text-shadow: 2px 4px 3px #CFCFCF;
     letter-spacing: 2px;
     word-spacing: 5px;
 }
@@ -419,7 +440,7 @@ h2.intro_subtitle {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     color: #484848;
-    text-shadow: 0 1px 0 #CFCFCF;
+    text-shadow: 0 1px 0 #332F2F;
     letter-spacing: 1.5px;
     word-spacing: 2px;
 }
@@ -441,6 +462,11 @@ h1.work_title {
     z-index: -1;
 }
 
+#section1 .topspace
+{
+    margin-top: 30px;
+}
+
 #section2 {
     background-image: url("../img/ananya_2.png");
     background-repeat: no-repeat;
@@ -454,7 +480,7 @@ h1.work_title {
 }
 
 .yellow-under {
-    border-bottom: 2px solid yellow;
+    border-bottom: 3px solid #FFCF00;
 }
 
 
@@ -466,10 +492,22 @@ h1.work_title {
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    .fp-controlArrow.fp-prev
+    {
+        left: 15px;
+        border-width: 8.5px 17px 8.5px 0px;
+    }
+    .fp-controlArrow.fp-next
+    {
+        border-width: 8.5px 0px 8.5px 17px;
+    }
     h1.intro_title {
         font-size: 1.3em;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
+    }
+    .yellow-under {
+        border-bottom: 1px solid #FFCF00;
     }
     h2.intro_subtitle {
         font-size: 1em;
@@ -483,6 +521,11 @@ h1.work_title {
     }
     #section2 {
         background-position: left bottom;
+    }
+        #section1 .topspace
+    {
+        display: block;
+        margin-top: 100px;
     }
 }
 
@@ -507,6 +550,9 @@ h1.work_title {
     border: 2px solid #5D5D5D;
     -webkit-animation: intro 3s;
     animation: intro 3s;
+}
+.slide .mouse {
+    left: 87.5%;
 }
 
 .scroll {

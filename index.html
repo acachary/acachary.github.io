@@ -19,6 +19,7 @@
     </script>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" scr="js/custom.js"></script>
     <script type="text/javascript">
@@ -26,16 +27,17 @@
         $('#fullpage').fullpage({
             anchors: ['intro', 'work', 'about', 'contact'],
             menu: '#navigator',
-            loopHorizontal: false
+            loopHorizontal: false,
+            scrollOverflow: true
         });
-        $(window).scroll(function() {
+        /*$(window).scroll(function() {
             isOnView = isElementVisible("#section1");
             if (isOnView) {
                 alert('The selected element is visible!');
             } else { // If not visible
                 //alert('oops, the selected elment might be hidden or does not exist');
             }
-        });
+        });*/
     });
     </script>
 </head>
@@ -118,12 +120,12 @@
                         <img src="img/elastic_cloud_compute.png">
                     </div>
                 </div>
-            </div>
-            <div class="slide">
-                <div class="topspace"></div>
                 <div class="row">
                     <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
-                        <img src="img/stock_search.png">
+                        <h1 class="work_title">Scalable Networked Games Infrastructure Using Elastic Cloud Compute</h1>
+                        <h2 class="work_title">Research Project - Fall 2015</h2>
+                        <p class="work_text">Infrastructure that processes real-time scientific computations from large scale multiplayer MMORTS game on cloud platforms. Working on implementing path finding algorithm for N-body simulation using OpenCL kernel to split the computation across node servers.
+                            <br> Results: Simulations even on low-end smartphones are 2.5x faster than native Core i7 processor.</p>
                     </div>
                 </div>
             </div>
@@ -131,7 +133,44 @@
                 <div class="topspace"></div>
                 <div class="row">
                     <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
+                        <iframe width="420" height="315" src="https://www.youtube.com/embed/ao6v5QQsFFY" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
+                        <h1 class="work_title">•  Information Retrieval &amp; Search Engines – Nasa Polar Dataset</h1>
+                        <h2 class="work_title">Spring 2015</h2>
+                        <p class="work_text">Crawled three polar and arctic data repositories using Apache Nutch and Tika. Built two URL filter plugins for Nutch to perform de-duplication at the time of crawling. Designed and implemented content-based and link-based ranking algorithms on the indexed data using Solr and Lucene. Constructed Polar data visualization using D3.js and Banana Analytics.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="topspace"></div>
+                <div class="row">
+                    <div class="small-8 small-centered medium-8 medium-centered large-8 large-centered columns">
+                        <img src="img/stock_search.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
+                        <h1 class="work_title">Finance Stock Search Application</h1>
+                        <h2 class="work_title">Spring 2014</h2>
+                        <p class="work_text">Developed a HTML5 web app and android application using JQuery and Ajax to interact with Java servlet (on Amazon AWS). Used Yahoo finance API and incorporated Facebook JavaScript SDK for ‘share’ feature.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="topspace"></div>
+                <div class="row">
+                    <div class="small-9 small-centered medium-9 medium-centered large-9 large-centered columns">
                         <img src="img/ai_reversi.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
+                        <h1 class="work_title">Artificial Intelligence - Reversi Game</h1>
+                        <h2 class="work_title">Fall 2014</h2>
+                        <p class="work_text">Developed a program that determines the best possible moves for a player, looking at N-moves ahead (depth) using adversarial search algorithms with positional weight evaluation functions.</p>
                     </div>
                 </div>
             </div>
@@ -140,6 +179,13 @@
                 <div class="row">
                     <div class="small-8 small-centered medium-8 medium-centered large-8 large-centered columns">
                         <img src="img/weenix_kernel.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="small-10 small-centered medium-10 medium-centered large-10 large-centered columns">
+                        <h1 class="work_title">Operating System - Weenix Kernel</h1>
+                        <h2 class="work_title">Spring 2014</h2>
+                        <p class="work_text"> Implemented Process &amp; Thread architecture with synchronization primitives and Virtual File System (VFS) for handling files/directories.</p>
                     </div>
                 </div>
                 <div class="mouse">

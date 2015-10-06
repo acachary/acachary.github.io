@@ -373,7 +373,7 @@ i:hover {
     float:left;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1110px) {
     .menu {
         display: none;
     }
@@ -451,11 +451,26 @@ h2.intro_subtitle {
 
 h1.work_title {
     font-family: 'Open Sans', sans-serif;
-    font-size: 32px;
-    color: #5d5d5d;
+    font-size: 26px;
+    font-weight: 600;
+    color: #201010;
     letter-spacing: 2px;
     word-spacing: 5px;
-    /*margin-top: 75px;*/
+}
+
+h2.work_title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 22px;
+    color: #484848;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+
+p.work_text{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 17px;
+    font-weight: 400;
+    color: #262222;
 }
 
 #section0 {
@@ -510,15 +525,25 @@ h1.work_title {
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
     }
+    h1.work_title {
+        font-size: 1em;
+        letter-spacing: 0.05em;
+        word-spacing: 0.05em;
+    }
     .yellow-under {
         border-bottom: 1px solid #FFCF00;
     }
-    h2.intro_subtitle {
-        font-size: 1em;
+    h2.intro_subtitle, h2.work_title {
+        font-size: 0.8em;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
         line-height: 1.5em;
     }
+    
+    p.work_text {
+        font-size: 0.8em;
+    }
+
     #section0 {
         background-position: bottom;
         background-size: contain;
@@ -529,7 +554,7 @@ h1.work_title {
         #section1 .topspace
     {
         display: block;
-        margin-top: 100px;
+        margin-top: 80px;
     }
 }
 

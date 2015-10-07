@@ -230,7 +230,12 @@ i:hover {
     z-index: 10;
 }
 
-
+.logo-wrapper
+{
+    float: left;
+    padding: 0px 10px 10px 15px;
+    width: 200px;
+}
 /* Fixed header and footer.
 	* --------------------------------------- */
 
@@ -274,13 +279,14 @@ i:hover {
 {
     left: 150px;
     border-width: 10.5px 20px 10.5px 0px;
-    border-color: transparent #727272 transparent transparent;
+    border-color: transparent #F00 transparent transparent;
     opacity:0.5;
 }
 .fp-controlArrow.fp-next
 {
+    right: 150px;
     border-width: 10.5px 0px 10.5px 20px;
-    border-color: transparent transparent transparent #727272;
+    border-color: transparent transparent transparent #F00;
     opacity:0.5;
 }
 .fp-controlArrow.fp-prev:hover
@@ -524,14 +530,19 @@ p.work_text{
         padding-left: 2rem;
         padding-right: 2rem;
     }
+    .logo-wrapper
+    {
+        width:140px;
+    }
     .fp-controlArrow.fp-prev
     {
-        left: 15px;
-        border-width: 5.5px 12px 5.5px 0px;
+        left: 25px;
+        border-width: 6.5px 12px 6.5px 0px;
     }
     .fp-controlArrow.fp-next
     {
-        border-width: 5.5px 0px 5.5px 12px;
+        right: 25px;
+        border-width: 6.5px 0px 6.5px 12px;
     }
     h1.intro_title {
         font-size: 1.3em;
@@ -547,7 +558,7 @@ p.work_text{
         border-bottom: 1px solid #FFCF00;
     }
     h2.intro_subtitle, h2.work_title {
-        font-size: 0.8em;
+        font-size: 1.0em;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
         line-height: 1.5em;

@@ -402,7 +402,7 @@ i:hover {
     float:left;
 }
 
-@media screen and (max-width: 1110px) {
+@media screen and (max-width: 1256px) {
     .menu {
         display: none;
     }
@@ -539,6 +539,10 @@ h1.about_title {
 .topspace
 {
     margin-top: 30px;
+}
+#section2 .topspace
+{
+    margin-top: 90px;
 }
 
 #section3 .midspace
@@ -678,6 +682,7 @@ h1.about_title {
 }
 .slide .mouse {
     left: 90%;
+    margin-bottom: 30px;
 }
 
 .scroll {

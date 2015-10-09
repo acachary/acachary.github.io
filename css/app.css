@@ -607,7 +607,7 @@ h1.about_title {
     .yellow-under {
         border-bottom: 1px solid #FFCF00;
     }
-    h2.intro_subtitle, h2.work_title {
+    h2.intro_subtitle, h2.work_subtitle {
         font-size: 1.0em;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;

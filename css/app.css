@@ -393,6 +393,7 @@ i:hover {
     top: -5px;
     position: relative;
     padding-left: 15px;
+    color: #DDD;
 }
 
 .menu .menu-link .icon {
@@ -425,9 +426,18 @@ i:hover {
     fill: #0ec19f;
 }
 .menu-item:hover path {
-    fill: #0ec19f;
+    fill: #FFCF00;
 }
 
+.menu-item path
+{
+    fill: #A5A5A5;
+}
+
+.title-alive
+{
+    opacity: 1;
+}
 
 .menu-item:nth-child(1):after,
 .menu-item:nth-child(2):after {
@@ -473,6 +483,24 @@ h2.intro_subtitle {
     font-family: 'Open Sans', sans-serif;
     font-size: 24px;
     color: #484848;
+    letter-spacing: 1.5px;
+    word-spacing: 2px;
+}
+
+h1.intro_title_white {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    color: #E4E4E4;
+    text-shadow: 2px 4px 3px #000;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+}
+
+h2.intro_subtitle_white {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 24px;
+    color: #A5A5A5;
     letter-spacing: 1.5px;
     word-spacing: 2px;
 }
@@ -529,16 +557,15 @@ h1.about_title {
 }
 
 #section0 {
-    background-image: url("../img/intro_bg.png");
+    background-image: url("../img/tower.jpg");
     background-repeat: no-repeat;
-    background-position: bottom;
     background-size: cover;
     z-index: -1;
 }
 
 .topspace
 {
-    margin-top: 30px;
+    margin-top: 50px;
 }
 #section2 .topspace
 {
@@ -598,7 +625,7 @@ h1.about_title {
         right: 25px;
         border-width: 6.5px 0px 6.5px 12px;
     }
-    h1.intro_title {
+    h1.intro_title, h1.intro_title_white {
         font-size: 1.3em;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
@@ -611,7 +638,7 @@ h1.about_title {
     .yellow-under {
         border-bottom: 1px solid #FFCF00;
     }
-    h2.intro_subtitle, h2.work_subtitle {
+    h2.intro_subtitle, h2.intro_subtitle_white, h2.work_subtitle {
         font-size: 1.0em;
         letter-spacing: 0.05em;
         word-spacing: 0.05em;
@@ -627,7 +654,7 @@ h1.about_title {
 
     #section0 {
         background-position: bottom;
-        background-size: contain;
+        background-size: cover;
     }
     #section2 {
         background-position: left bottom;
@@ -676,13 +703,14 @@ h1.about_title {
     left: 50%;
     margin-left: -12px;
     border-radius: 15px;
-    border: 2px solid #5D5D5D;
+    border: 2px solid #A5A5A5;
     -webkit-animation: intro 3s;
     animation: intro 3s;
 }
 .slide .mouse {
     left: 90%;
     margin-bottom: 30px;
+    border: 2px solid #5D5D5D;
 }
 
 .scroll {
@@ -692,7 +720,7 @@ h1.about_title {
     height: 3.5px;
     margin: 6px auto;
     border-radius: 4px;
-    background: #5D5D5D;
+    background: #A5A5A5;
     -webkit-animation: finger 1.5s infinite;
     animation: finger 1.5s infinite;
 }
@@ -704,7 +732,7 @@ h1.about_title {
     font-size: 10px;
     text-align: center;
     font-weight: 600;
-    color: #5D5D5D;
+    color: #A5A5A5;
     margin: 35px auto;
     opacity: 1;
     -webkit-transform: translateX(-9px);

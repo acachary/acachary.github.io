@@ -414,7 +414,7 @@ i:hover {
     float: left;
 }
 
-@media screen and (max-width: 1256px) {
+@media screen and (max-width: 1110px) {
     .menu {
         display: none;
     }

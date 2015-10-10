@@ -39,11 +39,17 @@
                 //using anchorLink
                 if(anchorLink == 'intro')
                 {
-                    $('#my-logo img').attr("src",white_logo);
+                    //$('#my-logo img').attr("src",white_logo);
+                    $('.menu').addClass('menu_down');
+                    $('.menu').removeClass('menu_up');
+                    $('.logo-wrapper').show(1000);
                 }
                 else
                 {
-                    $('#my-logo img').attr("src",black_logo);
+                    //$('#my-logo img').attr("src",black_logo);
+                    $('.menu').removeClass('menu_down');
+                    $('.menu').addClass('menu_up');
+                    $('.logo-wrapper').hide(1000);
                 }
                 if (anchorLink == 'work') {
                     $('#work-nav').removeClass("title");

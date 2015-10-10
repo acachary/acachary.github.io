@@ -435,13 +435,13 @@ i:hover {
     text-align: center;
     float: left;
 }
-/*
-@media screen and (max-width: 1000px) {
+
+@media screen and (max-width: 720px) {
     .menu {
         display: none;
     }
 }
-*/
+
 .menu-item {
     display: block;
     color: inherit;
@@ -640,7 +640,16 @@ h1.about_title {
 
 
 /* Media Queries */
-
+@media only screen and (max-width: 80em) {
+    .fp-controlArrow.fp-prev {
+        left: 25px;
+        border-width: 8.5px 16px 8.5px 0px;
+    }
+    .fp-controlArrow.fp-next {
+        right: 25px;
+        border-width: 8.5px 0px 8.5px 16px;
+    }
+}
 @media only screen and (max-width: 60em) {
     .column,
     .columns {

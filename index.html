@@ -34,12 +34,21 @@
 
             afterLoad: function(anchorLink, index) {
                 var loadedSection = $(this);
-
+                var white_logo = "img/Logo_white.svg";
+                var black_logo = "img/Logo.svg";
                 //using anchorLink
+                if(anchorLink == 'intro')
+                {
+                    $('#my-logo img').attr("src",white_logo);
+                }
+                else
+                {
+                    $('#my-logo img').attr("src",black_logo);
+                }
                 if (anchorLink == 'work') {
                     $('#work-nav').removeClass("title");
                     $('#work-nav').addClass("title-alive");
-                    $('#work-icon').addClass("icon-alive");
+                    $('#work-icon path').addClass("icon-alive");
                 } else {
                     $('#work-nav').removeClass("title-alive");
                     $('#work-nav').addClass("title");
@@ -66,7 +75,6 @@
             }
         });
     });
-    
     </script>
 </head>
 
@@ -85,8 +93,8 @@
             <a href="#intro"><span class="logo_text">ANANYA ACHARYA</span></a>
         </div>
         -->
-        <div class="logo-wrapper">
-            <a href="#intro"><img src="img/Logo.svg" alt="ANANYA ACHARYA"></a>
+        <div class="logo-wrapper" id="my-logo">
+            <a href="#intro"><img src="img/Logo_white.svg" alt="ANANYA ACHARYA"></a>
         </div>
     </div>
     <nav class="menu fade-in one" id="navigator">
@@ -95,10 +103,10 @@
             <a href="#work" class="work menu-item">
                 <div class="menu-link"><span class="title" id="work-nav">work</span>
                     <div class="icon">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" id="work-icon">
                             <defs></defs>
                             <g>
-                                <path id="work-icon" d="M17,3v14H3V3H17 M20,0H0v20h20V0L20,0z"></path>
+                                <path d="M17,3v14H3V3H17 M20,0H0v20h20V0L20,0z"></path>
                             </g>
                         </svg>
                     </div>

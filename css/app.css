@@ -393,7 +393,19 @@ i:hover {
     top: -5px;
     position: relative;
     padding-left: 15px;
-    color: #DDD;
+    color: #9F9F9F;
+}
+.title-alive
+{
+    display: inline-block;
+    opacity: 1;
+    font-size: 1.125rem;
+    transition: all .2s ease;
+    padding-right: 10px;
+    top: -5px;
+    position: relative;
+    padding-left: 15px;
+    color: #0EC19F;
 }
 
 .menu .menu-link .icon {
@@ -423,7 +435,7 @@ i:hover {
 }
 
 .menu-item:active path {
-    fill: #0ec19f;
+    fill: #0EC19F;
 }
 .menu-item:hover path {
     fill: #FFCF00;
@@ -437,6 +449,11 @@ i:hover {
 .title-alive
 {
     opacity: 1;
+}
+
+.icon-alive
+{
+    fill: #0EC19F;
 }
 
 .menu-item:nth-child(1):after,

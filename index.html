@@ -30,45 +30,44 @@
             loopHorizontal: false,
             scrollOverflow: true,
             slidesNavigation: true,
-        	slidesNavPosition: 'top',
+            slidesNavPosition: 'top',
 
-            afterLoad: function(anchorLink, index){
-            var loadedSection = $(this);
+            afterLoad: function(anchorLink, index) {
+                var loadedSection = $(this);
 
-            //using anchorLink
-            if(anchorLink == 'work'){
-                $('#work-nav').addClass("title-alive");
-            }
-            else
-            {
-
-            }
-        }
-        });
-        /*$(window).scroll(function() {
-            isOnView = isElementVisible("#section1");
-            if (isOnView) {
-                alert('The selected element is visible!');
-            } else { // If not visible
-                //alert('oops, the selected elment might be hidden or does not exist');
-            }
-        });*/
-    });
-    </script>
-    <!--    <script type="text/javascript">
-        window.onload = function() {
-            var frames = document.getElementsByTagName("iframe");
-            for (var i = 0; i< frames.length; i++) {
-                var innerDoc = (frames.item(i).contentDocument) ? 
-                    frames.item(i).contentDocument : frames.item(i).contentWindow.document;
-                var iframeVideoTags = innerDoc.getElementsByTagName("video");
-                for (var j = 0; j < iframeVideoTags.length; j++) {
-                    iframeVideoTags.item(j).pause();
+                //using anchorLink
+                if (anchorLink == 'work') {
+                    $('#work-nav').removeClass("title");
+                    $('#work-nav').addClass("title-alive");
+                    $('#work-icon').addClass("icon-alive");
+                } else {
+                    $('#work-nav').removeClass("title-alive");
+                    $('#work-nav').addClass("title");
+                    $('#work-icon').removeClass("icon-alive");
+                }
+                if (anchorLink == 'about') {
+                    $('#about-nav').removeClass("title");
+                    $('#about-nav').addClass("title-alive");
+                    $('#about-icon').addClass("icon-alive");
+                } else {
+                    $('#about-nav').removeClass("title-alive");
+                    $('#about-nav').addClass("title");
+                    $('#work-icon').removeClass("icon-alive");
+                }
+                if (anchorLink == 'contact') {
+                    $('#contact-nav').removeClass("title");
+                    $('#contact-nav').addClass("title-alive");
+                    $('#contact-icon').addClass("icon-alive");
+                } else {
+                    $('#contact-nav').removeClass("title-alive");
+                    $('#contact-nav').addClass("title");
+                    $('#work-icon').removeClass("icon-alive");
                 }
             }
-        }
+        });
+    });
+    
     </script>
--->
 </head>
 
 <body>
@@ -91,14 +90,15 @@
         </div>
     </div>
     <nav class="menu fade-in one" id="navigator">
-        <div data-menuanchor="intro" class="active">
+        <div data-menuanchor="intro" class="active"></div>
+        <div data-menuanchor="work">
             <a href="#work" class="work menu-item">
                 <div class="menu-link"><span class="title" id="work-nav">work</span>
                     <div class="icon">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" id="joystick-work" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve">
                             <defs></defs>
                             <g>
-                                <path d="M17,3v14H3V3H17 M20,0H0v20h20V0L20,0z"></path>
+                                <path id="work-icon" d="M17,3v14H3V3H17 M20,0H0v20h20V0L20,0z"></path>
                             </g>
                         </svg>
                     </div>
@@ -109,10 +109,10 @@
             <a href="#about" class="about menu-item">
                 <div class="menu-link"><span class="title" id="about-nav">about</span>
                     <div class="icon">
-                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="24px" height="21px" viewbox="0 0 24 21" enable-background="new 0 0 24 21" xml:space="preserve" id="joystick-about" >
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="24px" height="21px" viewbox="0 0 24 21" enable-background="new 0 0 24 21" xml:space="preserve" id="joystick-about">
                             <defs></defs>
                             <g>
-                                <path d="M12,6l6.8,12H5.2L12,6 M12,0L0,21h24L12,0L12,0z"></path>
+                                <path id="about-icon" d="M12,6l6.8,12H5.2L12,6 M12,0L0,21h24L12,0L12,0z"></path>
                             </g>
                         </svg>
                     </div>
@@ -126,7 +126,7 @@
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="22px" height="22px" viewbox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve" id="joystick-contact">
                             <defs></defs>
                             <g>
-                                <path d="M11,3c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S6.6,3,11,3 M11,0C4.9,0,0,4.9,0,11s4.9,11,11,11s11-4.9,11-11            S17.1,0,11,0L11,0z"></path>
+                                <path id="contact-icon" d="M11,3c4.4,0,8,3.6,8,8s-3.6,8-8,8s-8-3.6-8-8S6.6,3,11,3 M11,0C4.9,0,0,4.9,0,11s4.9,11,11,11s11-4.9,11-11            S17.1,0,11,0L11,0z"></path>
                             </g>
                         </svg>
                     </div>
@@ -253,15 +253,15 @@
             <div class="row">
                 <div class="small-12 medium-5 medium-offset-1 large-5 large-offset-1 columns">
                     <a id="email" class="text-center" href="mailto:ananya.c.acharya@gmail.com">
-                        <i class = "fi-mail icon-style-small"><p class="contact-style">ananya.c.acharya@gmail.com</p></i>&nbsp;&nbsp;&nbsp;
+                        <i class="fi-mail icon-style-small"><p class="contact-style">ananya.c.acharya@gmail.com</p></i>&nbsp;&nbsp;&nbsp;
                     </a>
                 </div>
                 <div class="small-12 medium-5 medium-offset-1 large-5 large-offset-1 columns">
-                        <i class = "fi-telephone icon-style-small"><p class="contact-style">+1-213-422-8845</p></i>
+                    <i class="fi-telephone icon-style-small"><p class="contact-style">+1-213-422-8845</p></i>
                 </div>
             </div>
             <div class="row">
-                        <div class="midspace"></div>
+                <div class="midspace"></div>
                 <div class="text-center">
                     <div class="social-icon">
                         <a target="_blank" href="https://www.linkedin.com/in/ananyaacharya" title="Linked-In"><i class = "fi-social-linkedin icon-style"></i></a>

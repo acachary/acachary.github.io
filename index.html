@@ -23,6 +23,7 @@
     <script type="text/javascript" src="js/jquery.fullPage.js"></script>
     <script type="text/javascript" scr="js/custom.js"></script>
     <script type="text/javascript">
+    var intro_count = 0;
     $(document).ready(function() {
         $('#fullpage').fullpage({
             anchors: ['intro', 'work', 'about', 'contact'],
@@ -37,19 +38,19 @@
                 var white_logo = "img/Logo_white.svg";
                 var black_logo = "img/Logo.svg";
                 //using anchorLink
-                if(anchorLink == 'intro')
-                {
+                if (anchorLink == 'intro') {
                     //$('#my-logo img').attr("src",white_logo);
-                    $('.menu').addClass('menu_down');
-                    $('.menu').removeClass('menu_up');
+                    if (intro_count == 1) {
+                        $('.menu').addClass('menu_down');
+                        $('.menu').removeClass('menu_up');
+                    }
                     $('.logo-wrapper').show(1000);
-                }
-                else
-                {
+                } else {
                     //$('#my-logo img').attr("src",black_logo);
                     $('.menu').removeClass('menu_down');
                     $('.menu').addClass('menu_up');
                     $('.logo-wrapper').hide(1000);
+                    intro_count = 1;
                 }
                 if (anchorLink == 'work') {
                     $('#work-nav').removeClass("title");
@@ -99,11 +100,11 @@
             <a href="#intro"><span class="logo_text">ANANYA ACHARYA</span></a>
         </div>
         -->
-        <div class="logo-wrapper" id="my-logo">
+        <div class="logo-wrapper fade-in one" id="my-logo">
             <a href="#intro"><img src="img/Logo_white.svg" alt="ANANYA ACHARYA"></a>
         </div>
     </div>
-    <nav class="menu fade-in one" id="navigator">
+    <nav class="menu fade-in two" id="navigator">
         <div data-menuanchor="intro" class="active"></div>
         <div data-menuanchor="work">
             <a href="#work" class="work menu-item">

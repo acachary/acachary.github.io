@@ -11,78 +11,6 @@
     <link rel="stylesheet" type="text/css" href="js/jquery.fullPage.css" />
     <link rel="stylesheet" href="css/app.css">
     <link rel="stylesheet" media="mediatype and|not|only (expressions)" href="app.css">
-    <script src="js/vendor/modernizr.js"></script>
-    <script src="js/vendor/jquery.js"></script>
-    <script src="js/foundation.min.js"></script>
-    <script>
-    $(document).foundation();
-    </script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
-    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
-    <script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
-    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
-    <script type="text/javascript" scr="js/custom.js"></script>
-    <script type="text/javascript">
-    var intro_count = 0;
-    $(document).ready(function() {
-        $('#fullpage').fullpage({
-            anchors: ['intro', 'work', 'about', 'contact'],
-            menu: '#navigator',
-            loopHorizontal: false,
-            scrollOverflow: true,
-            slidesNavigation: true,
-            slidesNavPosition: 'top',
-
-            afterLoad: function(anchorLink, index) {
-                var loadedSection = $(this);
-                var white_logo = "img/Logo_white.svg";
-                var black_logo = "img/Logo.svg";
-                //using anchorLink
-                if (anchorLink == 'intro') {
-                    //$('#my-logo img').attr("src",white_logo);
-                    if (intro_count == 1) {
-                        $('.menu').addClass('menu_down');
-                        $('.menu').removeClass('menu_up');
-                    }
-                    $('.logo-wrapper').show(1000);
-                } else {
-                    //$('#my-logo img').attr("src",black_logo);
-                    $('.menu').removeClass('menu_down');
-                    $('.menu').addClass('menu_up');
-                    $('.logo-wrapper').hide(1000);
-                    intro_count = 1;
-                }
-                if (anchorLink == 'work') {
-                    $('#work-nav').removeClass("title");
-                    $('#work-nav').addClass("title-alive");
-                    $('#work-icon path').addClass("icon-alive");
-                } else {
-                    $('#work-nav').removeClass("title-alive");
-                    $('#work-nav').addClass("title");
-                    $('#work-icon').removeClass("icon-alive");
-                }
-                if (anchorLink == 'about') {
-                    $('#about-nav').removeClass("title");
-                    $('#about-nav').addClass("title-alive");
-                    $('#about-icon').addClass("icon-alive");
-                } else {
-                    $('#about-nav').removeClass("title-alive");
-                    $('#about-nav').addClass("title");
-                    $('#work-icon').removeClass("icon-alive");
-                }
-                if (anchorLink == 'contact') {
-                    $('#contact-nav').removeClass("title");
-                    $('#contact-nav').addClass("title-alive");
-                    $('#contact-icon').addClass("icon-alive");
-                } else {
-                    $('#contact-nav').removeClass("title-alive");
-                    $('#contact-nav').addClass("title");
-                    $('#work-icon').removeClass("icon-alive");
-                }
-            }
-        });
-    });
-    </script>
 </head>
 
 <body>
@@ -107,7 +35,7 @@
     <nav class="menu fade-in two" id="navigator">
         <div data-menuanchor="intro" class="active"></div>
         <div data-menuanchor="work">
-            <a href="#work" class="work menu-item">
+            <a href="#work"><div class="menu-item">
                 <div class="menu-link"><span class="title" id="work-nav">work</span>
                     <div class="icon">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="20px" height="20px" viewbox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve" id="work-icon">
@@ -118,10 +46,11 @@
                         </svg>
                     </div>
                 </div>
+                </div>
             </a>
         </div>
         <div data-menuanchor="about">
-            <a href="#about" class="about menu-item">
+            <a href="#about"><div class="menu-item">
                 <div class="menu-link"><span class="title" id="about-nav">about</span>
                     <div class="icon">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="24px" height="21px" viewbox="0 0 24 21" enable-background="new 0 0 24 21" xml:space="preserve" id="joystick-about">
@@ -132,10 +61,11 @@
                         </svg>
                     </div>
                 </div>
+                </div>
             </a>
         </div>
         <div data-menuanchor="contact">
-            <a href="#contact" class="contact menu-item">
+            <a href="#contact"><div class="menu-item">
                 <div class="menu-link"><span class="title" id="contact-nav">contact</span>
                     <div class="icon">
                         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/" x="0px" y="0px" width="22px" height="22px" viewbox="0 0 22 22" enable-background="new 0 0 22 22" xml:space="preserve" id="joystick-contact">
@@ -145,6 +75,7 @@
                             </g>
                         </svg>
                     </div>
+                </div>
                 </div>
             </a>
         </div>
@@ -298,6 +229,78 @@
             </div>
         </div>
     </div>
+    <script src="js/vendor/modernizr.js"></script>
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/foundation.min.js"></script>
+    <script>
+    $(document).foundation();
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.slimscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fullPage.js"></script>
+    <script type="text/javascript" scr="js/custom.js"></script>
+    <script type="text/javascript">
+    var intro_count = 0;
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            anchors: ['intro', 'work', 'about', 'contact'],
+            menu: '#navigator',
+            loopHorizontal: false,
+            scrollOverflow: true,
+            slidesNavigation: true,
+            slidesNavPosition: 'top',
+
+            afterLoad: function(anchorLink, index) {
+                var loadedSection = $(this);
+                var white_logo = "img/Logo_white.svg";
+                var black_logo = "img/Logo.svg";
+                //using anchorLink
+                if (anchorLink == 'intro') {
+                    //$('#my-logo img').attr("src",white_logo);
+                    if (intro_count == 1) {
+                        $('.menu').addClass('menu_down');
+                        $('.menu').removeClass('menu_up');
+                    }
+                    $('.logo-wrapper').show(1000);
+                } else {
+                    //$('#my-logo img').attr("src",black_logo);
+                    $('.menu').removeClass('menu_down');
+                    $('.menu').addClass('menu_up');
+                    $('.logo-wrapper').hide(1000);
+                    intro_count = 1;
+                }
+                if (anchorLink == 'work') {
+                    $('#work-nav').removeClass("title");
+                    $('#work-nav').addClass("title-alive");
+                    $('#work-icon path').addClass("icon-alive");
+                } else {
+                    $('#work-nav').removeClass("title-alive");
+                    $('#work-nav').addClass("title");
+                    $('#work-icon').removeClass("icon-alive");
+                }
+                if (anchorLink == 'about') {
+                    $('#about-nav').removeClass("title");
+                    $('#about-nav').addClass("title-alive");
+                    $('#about-icon').addClass("icon-alive");
+                } else {
+                    $('#about-nav').removeClass("title-alive");
+                    $('#about-nav').addClass("title");
+                    $('#work-icon').removeClass("icon-alive");
+                }
+                if (anchorLink == 'contact') {
+                    $('#contact-nav').removeClass("title");
+                    $('#contact-nav').addClass("title-alive");
+                    $('#contact-icon').addClass("icon-alive");
+                } else {
+                    $('#contact-nav').removeClass("title-alive");
+                    $('#contact-nav').addClass("title");
+                    $('#work-icon').removeClass("icon-alive");
+                }
+            }
+        });
+    });
+    </script>
 </body>
 
 </html>
